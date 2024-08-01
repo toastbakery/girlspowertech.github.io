@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import useArticle from '@/hooks/useArticle';
 import './style.scss';
+import ImgRenderer from './imgRenderer';
 
 interface ArticleProps {
   filename: string;
@@ -12,6 +13,8 @@ type LinkRendererProps = {
   href?: string;
   children?: React.ReactNode;
 };
+
+
 
 function LinkRenderer(props: LinkRendererProps) {
   return (
@@ -26,7 +29,10 @@ const Article: React.FC<ArticleProps> = ({ filename }) => {
 
   return (
     <div className="article">
-      <ReactMarkdown remarkPlugins={ [remarkGfm] } components={ { a: LinkRenderer } }>
+      <ReactMarkdown remarkPlugins={ [remarkGfm] } components={ {
+        a: LinkRenderer,
+        img: ImgRenderer
+      } }>
         { content }
       </ReactMarkdown>
     </div>

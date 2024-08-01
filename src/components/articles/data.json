@@ -11,6 +11,15 @@
     "path": "public/docs/weekly-report-202408.md"
   },
   {
+    "title": "如何不使用 git 提交改动？",
+    "date": "2024-08-01",
+    "tags": [
+      "tutorial"
+    ],
+    "id": "how-to-pr-without-git",
+    "path": "public/docs/how-to-pr-without-git.md"
+  },
+  {
     "title": "如何上手一个不熟悉的前端项目？",
     "date": "2024-07-25",
     "tags": [

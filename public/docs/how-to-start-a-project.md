@@ -71,7 +71,7 @@ tags:
 
 我非常推荐，先把项目结构和目的发给 AI 让它帮你理一理建议方案 （ 截图中对话在 https://poe.com/s/rmH8REOwCKkDwJ4TmIq5 ），这里给出建议的方案其实已经非常完整，可以直接按它提供的方案在项目基础上删改。如果你有额外的什么问题，考虑将大任务分解成小的、可管理的部分，再在 thread 里展开询问。
 
-![Pasted image 20240724231207](https://github.com/user-attachments/assets/fc399e14-3011-4500-b5a5-00664d864b54)
+![ai](https://github.com/user-attachments/assets/fc399e14-3011-4500-b5a5-00664d864b54)
 
 #### 4. 调试技巧
 
