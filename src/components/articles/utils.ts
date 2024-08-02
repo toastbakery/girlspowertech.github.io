@@ -13,7 +13,7 @@ export function parseMarkdownHeadings(markdown: string): TocItem[] {
   while ((match = headingRegex.exec(markdown)) !== null) {
     const level = match[1].length;
     const title = match[2];
-    const id = title.toLowerCase().replace(/\s+/g, '-');
+    const id = title;
     toc.push({ id, title, level });
   }
 

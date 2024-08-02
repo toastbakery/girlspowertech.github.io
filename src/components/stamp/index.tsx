@@ -23,7 +23,6 @@ const PostmarkStamp: React.FC<PostmarkStampProps> = ({
   className
 }) => {
 
-  console.log(color)
   const logoFilter = `${ hexToCSSFilter(color).filter.replace(';', '') }`;
 
   const style = useMemo(() => {

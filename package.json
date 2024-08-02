@@ -1,6 +1,7 @@
 {
   "name": "girlspowertech",
   "description": "The homepage for our program",
+  "homepage": "https://girlspower.tech/",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
