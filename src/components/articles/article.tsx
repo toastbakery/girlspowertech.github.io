@@ -22,7 +22,9 @@ export const TableOfContent: FC<TableOfContentsProps> = ({ toc }) => {
       <h2>目录</h2>
       <ul>
         { toc.map((item) => (
-          <li key={ item.id } style={ { marginLeft: `${ (item.level - 1) * 12 }px` } }>
+          <li key={ item.id } style={ {
+            margin: `${ Math.max(5 - item.level, 0) * 7 }px 0 ${ Math.max(5 - item.level, 0) * 7 }px ${ (item.level - 1) * 12 }px`,
+          } }>
             <a href={ `#${ item.id }` }>{ item.title }</a>
           </li>
         )) }
