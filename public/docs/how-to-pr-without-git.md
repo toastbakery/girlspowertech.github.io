@@ -12,7 +12,7 @@ tags:
 
 下面将以两个例子展开说明如何不使用 git 命令提交自己的改动并提交 PR 到上游。
 
-### 1. PREREQUISITES
+### 1. Prerequisites
 
 1. 你有一台可访问 Github 的 PC
    - 国内访问较慢
@@ -96,8 +96,13 @@ tags:
 
 请了解 [markdown](https://markdownlivepreview.com/) 格式然后使用该格式写文章
 
+#### 3.2 写文章
+
+1. 文案规范
+2. 排版保持规范
+3. 图片勿过大或过小
+
 ### 4. Tips
 
-- 请时时关注你的仓库是否与上游仓库同步，如果不是同步，点击下方 `Sync fork` 按钮拉取上游更新，否则无法提交 PR
-
+1. 请时时关注你的仓库是否与上游仓库同步，如果未同步，点击下方 `Sync fork` 按钮拉取上游进行更新，如遇冲突将无法合并
   ![](/docs/imgs/sync.png)

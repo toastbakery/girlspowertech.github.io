@@ -1,4 +1,4 @@
-import React, { FC, PropsWithChildren } from 'react';
+import React, { FC, PropsWithChildren, useState, useLayoutEffect, useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -13,14 +13,13 @@ interface ArticleProps {
 
 interface TableOfContentsProps {
   toc: TocItem[];
+  activeId?: string;
 }
 
 
-
-export const TableOfContent: FC<TableOfContentsProps> = ({ toc }) => {
+export const TableOfContent: FC<TableOfContentsProps> = ({ toc, activeId }) => {
 
   const { pathname } = useLocation();
-
   return (
     <nav className="toc">
       <h2>目录</h2>
@@ -29,7 +28,11 @@ export const TableOfContent: FC<TableOfContentsProps> = ({ toc }) => {
           <li key={ item.id } style={ {
             margin: `${ Math.max(5 - item.level, 0) * 7 }px 0 ${ Math.max(5 - item.level, 0) * 7 }px ${ (item.level - 1) * 12 }px`,
           } }>
-            <a href={ `#${ pathname }#${ item.id }` }>{ item.title }</a>
+            <a href={ `#${ pathname }#${ item.id }` }
+              className={
+                encodeURIComponent(item.id) === activeId ? 'active' : ''
+              }
+            >{ item.title }</a>
           </li>
         )) }
       </ul>
@@ -38,16 +41,24 @@ export const TableOfContent: FC<TableOfContentsProps> = ({ toc }) => {
 };
 
 
-const Heading: FC<PropsWithChildren<{ level: number }>> = ({ level, children }) => {
+const Heading: FC<PropsWithChildren<{ level: number }>> = ({ level, activeId, children }) => {
   const HeadingTag = `h${ level }` as keyof JSX.IntrinsicElements;
+  const { pathname } = useLocation();
+
   if (!children) {
     return <HeadingTag />;
   }
-  return <HeadingTag id={ encodeURIComponent(children.toString()) }>{ children }</HeadingTag>;
+  const encodedUri = encodeURIComponent(children.toString());
+
+  return <HeadingTag id={ encodedUri }>
+    <a
+      href={ `#${ pathname }#${ encodedUri }` }>
+      { children }
+    </a></HeadingTag>
+
 }
 
 const Article: React.FC<ArticleProps> = ({ content }) => {
-
   return (
     <div className="article">
       <div className="article-content">
@@ -67,7 +78,7 @@ const Article: React.FC<ArticleProps> = ({ content }) => {
           { content }
         </ReactMarkdown>
       </div>
-    </div >
+    </div>
   );
 };
 

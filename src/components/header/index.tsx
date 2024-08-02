@@ -1,12 +1,12 @@
-import React from "react";
 import "./style.scss";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header>
-      <div className="logo" />
+      <Link className="logo" to="/" />
       <div>
-        <h1>GIRLS POWER TECH</h1>
+        <Link to="/" ><h1>GIRLS POWER TECH</h1></Link>
         <div>
           Create some lightweight, creative, fun, and feminist projects
         </div>
