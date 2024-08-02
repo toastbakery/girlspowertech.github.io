@@ -1,41 +1,53 @@
-import React from 'react';
+import React, { useMemo, FC } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import useArticle from '@/hooks/useArticle';
 import './style.scss';
-import ImgRenderer from './imgRenderer';
+import ImgRenderer from './renderer/imgRenderer';
+import LinkRenderer from './renderer/aRenderer';
+import { TocItem, parseMarkdownHeadings } from './utils';
 
 interface ArticleProps {
-  filename: string;
+  content: string;
 }
 
-type LinkRendererProps = {
-  href?: string;
-  children?: React.ReactNode;
+interface TableOfContentsProps {
+  toc: TocItem[];
+}
+
+
+export const TableOfContent: FC<TableOfContentsProps> = ({ toc }) => {
+  return (
+    <nav className="toc">
+      <h2>目录</h2>
+      <ul>
+        { toc.map((item) => (
+          <li key={ item.id } style={ { marginLeft: `${ (item.level - 1) * 12 }px` } }>
+            <a href={ `#${ item.id }` }>{ item.title }</a>
+          </li>
+        )) }
+      </ul>
+    </nav>
+  );
 };
 
 
-
-function LinkRenderer(props: LinkRendererProps) {
-  return (
-    <a href={ props.href } target="_blank" rel="noreferrer">
-      { props.children }
-    </a>
-  );
-}
-
-const Article: React.FC<ArticleProps> = ({ filename }) => {
-  const content = useArticle(filename);
+const Article: React.FC<ArticleProps> = ({ content }) => {
 
   return (
     <div className="article">
-      <ReactMarkdown remarkPlugins={ [remarkGfm] } components={ {
-        a: LinkRenderer,
-        img: ImgRenderer
-      } }>
-        { content }
-      </ReactMarkdown>
-    </div>
+      <div className="article-content">
+        <ReactMarkdown
+          remarkPlugins={ [remarkGfm] }
+          components={ {
+            a: LinkRenderer,
+            img: ImgRenderer,
+          } }
+        >
+          { content }
+        </ReactMarkdown>
+      </div>
+    </div >
   );
 };
 

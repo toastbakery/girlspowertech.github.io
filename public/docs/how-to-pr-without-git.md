@@ -3,8 +3,7 @@ title: 如何不使用 git 提交改动？
 date: 2024-08-01
 
 tags:
-- tutorial
-
+  - tutorial
 ---
 
 ## 如何不使用 git 提交改动？
@@ -13,7 +12,6 @@ tags:
 
 下面将以两个例子展开说明如何不使用 git 命令提交自己的改动并提交 PR 到上游。
 
-
 ### 1. PREREQUISITES
 
 1. 你有一台可访问 Github 的 PC
@@ -21,7 +19,6 @@ tags:
 2. 你有自己的 Github 账号
    - 在此注册 https://github.com/signup
 3. 你已经在浏览器登陆了 Github
-
 
 ### 2. 提交 Profile
 
@@ -35,33 +32,29 @@ tags:
 
 ![](/docs/imgs/1.png)
 
-
 #### 2.2 去要修改的文件 / 目录
 
-去自己 fork 的仓库，链接格式为 `<你的 Github ID/girlspowertech.github.io>` ，点击 `Go to file` ，输入查找你要修改的文件，点击进入。
-
-此处以在 `public/avatars` 上传头像为例：
+去自己 fork 的仓库，链接格式为 `<你的 Github ID/girlspowertech.github.io>` ，点击 `Go to file` ，输入查找你要修改的文件，点击进入。此处以在 `public/avatars` 上传头像为例：
 
 ![](/docs/imgs/2.png)
 
 #### 2.3 去上传文件页面
 
-现在已经到达你要修改的文件夹，点击 `Add file` -> `Upload files`
+现在已经到达你要上传头像的文件夹，点击 `Add file` -> `Upload files`
 
 ![](/docs/imgs/3.png)
 
 #### 2.4 上传文件
 
-为你上传的文件提前改好名字，点击或拖拽上传。
+为你上传的图片提前改好名字，点击或拖拽上传。
 
 在 `Commit Changes` 中写好这次改动的信息，点击下方的按钮提交
 
 ![](/docs/imgs/9.png)
 
-
 #### 2.5 更新自己的信息
 
-至此完成了头像的上传，接下来修改存储成员信息的 json 文件。
+至此完成了头像的上传，接下来修改存储成员信息的 JSON 文件。
 
 回到第 `2.2` 步，找到 `workers.json` 文件点击进入。
 
@@ -75,14 +68,13 @@ tags:
 
 #### 2.7 新增自己的信息
 
-滑到文件最下方，填入符合`json 格式`的自己的信息，点击 `Commit Changes` 提交。
+滑到文件最下方，填入符合[`JSON 格式`](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Objects/JSON)的自己的信息（可以直接复制上一个成员的，但要注意补充一个半角逗号），点击 `Commit Changes` 提交。
 
 ![](/docs/imgs/7.png)
 
 #### 2.8 回到仓库主页
 
 回到自己 fork 的仓库主页，点击 `Contribute` -> `Open pull request`，提交 PR。
-
 
 ![](/docs/imgs/6.png)
 
@@ -96,13 +88,13 @@ tags:
 
 ![](/docs/imgs/5.png)
 
-
 ### 3. 提交一篇新的文章
 
-例子 2 是成员提交一篇新的文章到团队博客，基本方法于上传自己的头像类似，需要在 `public/docs/` 目录下新建一个 .md 文件。如果有图片，请上传在 `public/docs/imgs/` 目录下，然后在 md 文件中以 `/docs/imgs/:id` 开头引用。
+例子 2 是成员提交一篇新的文章到团队博客，基本方法于上传自己的头像类似，需要在 `public/docs/` 目录下新建一个 .md 文件。如果有图片，请上传在 `public/docs/imgs/` 目录下，然后在 md 文件中以 `/docs/imgs/:photo_name` 开头引用。
+
+#### 3.1 了解 Markdown
 
 请了解 [markdown](https://markdownlivepreview.com/) 格式然后使用该格式写文章
-
 
 ### 4. Tips
 

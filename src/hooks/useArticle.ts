@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import yaml from 'yaml';
 
 export function stripYamlFrontMatter(content: string): string {
   const frontMatterRegex = /^---\n([\s\S]*?)\n---\n/;

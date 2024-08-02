@@ -21,7 +21,7 @@ const GirlsPowerTechStamp: FC<{ color?: string }> = ({ color }) => (
       marginRight: '3px',
     } }
     color={ color }
-    upperText=" ✾✿ GIRLS POWER TECH ✿✾"
+    upperText=" ✾✿ GIRLS POWER TECH ✿✾ "
     lowerText="- 2024.07 -"
   />
 );
