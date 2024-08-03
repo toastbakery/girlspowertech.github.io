@@ -45,3 +45,19 @@
     }
   }
 }
+
+/* Media Query for mobile device (600px) */
+@media (max-width: 600px) {
+  .postmark-stamp {
+    width: 80px;
+    height: 80px;
+
+    .outer-circle {
+      border-width: 1px;
+    }
+
+    .inner-circle {
+      border-width: 1px;
+    }
+  }
+}

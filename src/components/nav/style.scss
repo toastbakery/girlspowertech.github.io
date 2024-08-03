@@ -21,3 +21,15 @@ nav {
     }
   }
 }
+
+/* Media Query for mobile device (600px) */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: row;
+    align-items: flex-end;
+
+    a {
+      font-size: 20px;
+    }
+  }
+}
