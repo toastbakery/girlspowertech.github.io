@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { articles } from '@/components/articles';
 import Envelope from '@/components/envelope';
@@ -12,11 +12,13 @@ const ArticleList: React.FC = () => {
       className="article-list"
     >
       { articles.map((article, idx) => (
-        <Envelope
-          key={ idx }
-          { ...article }
-          onClick={ () => navigate(`/articles/${ article.id }`) }
-        />
+        <Fragment key={ idx }>
+          <Envelope
+            key={ idx }
+            { ...article }
+            onClick={ () => navigate(`/articles/${ article.id }`) }
+          />
+        </Fragment>
       )) }
     </div>
   );

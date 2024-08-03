@@ -98,9 +98,8 @@ tags:
 
 #### 3.2 写文章
 
-1. 文案规范
-2. 排版保持规范
-3. 图片勿过大或过小
+1. 建议阅读[中西文混排](https://design.teambition.com/doc/mixed)
+2. 图片勿过大，如大于 600kb 可先在 [tinypng](https://tinypng.com/) 进行压缩
 
 ### 4. Tips
 

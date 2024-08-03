@@ -26,7 +26,7 @@ export const TableOfContent: FC<TableOfContentsProps> = ({ toc, activeId }) => {
       <ul>
         { toc.map((item) => (
           <li key={ item.id } style={ {
-            margin: `${ Math.max(5 - item.level, 0) * 7 }px 0 ${ Math.max(5 - item.level, 0) * 7 }px ${ (item.level - 1) * 12 }px`,
+            margin: `${ Math.max(5 - item.level, 0) * 4 }px 0 ${ Math.max(5 - item.level, 0) * 4 }px ${ (item.level - 1) * 12 }px`,
           } }>
             <a href={ `#${ pathname }#${ item.id }` }
               className={

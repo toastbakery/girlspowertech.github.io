@@ -15,12 +15,16 @@ aside {
       margin-top: 0;
 
       li {
-        a {
-          font-size: 16px;
-          margin-left: 0;
-          font-weight: 500;
+        @media only screen and (max-width: 1440px) {
+          a {
+            font-size: 13px !important;
+          }
         }
 
+        a {
+          font-size: 15px;
+          margin-left: 0;
+        }
         list-style: none;
       }
     }
@@ -49,23 +53,23 @@ aside {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   h3 {
-    font-size: 25px;
-  }
-
-  h4 {
     font-size: 24px;
   }
 
-  h5 {
+  h4 {
     font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
   }
 
   p {
