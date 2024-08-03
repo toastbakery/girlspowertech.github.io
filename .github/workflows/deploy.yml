@@ -29,8 +29,17 @@ jobs:
     - name: Install dependencies
       run: pnpm install
 
+    - name: Set IS_FORK environment variable
+      run: |
+        if [ "${{ github.repository_owner }}" = "girlspowertech" ]; then
+          echo "IS_FORK=0" >> $GITHUB_ENV
+        else
+          echo "IS_FORK=1" >> $GITHUB_ENV
+        fi
+
     - name: Build project
-      run: GITHUB_ACTIONS=1 pnpm build
+      run: |
+        GITHUB_ACTIONS=1 IS_FORK=${{ env.IS_FORK }} pnpm build
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4

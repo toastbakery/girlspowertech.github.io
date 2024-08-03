@@ -4,6 +4,7 @@ import path from 'path';
 
 export default defineConfig(({ }) => {
   return {
+    base: process.env.IS_FORK === '1' ? '/girlspowertech.github.io' : '/',
     define: {
       _global: ({}),
     },
