@@ -6,6 +6,7 @@ import data from '@/components/articles/data.json';
 import useArticle from '@/hooks/useArticle';
 import { parseMarkdownHeadings } from '@/components/articles/utils';
 import Nav from '@/components/nav';
+import Switch from '@/components/switch';
 
 
 const getAnchor = (hash: string) => {
@@ -41,6 +42,7 @@ const ArticleWrapper: React.FC = () => {
   return <Layout content={ <Article content={ content } /> }
     aside={
       <>
+        <Switch />
         <Nav />
         <TableOfContent toc={ toc } activeId={ activeId } />
       </>

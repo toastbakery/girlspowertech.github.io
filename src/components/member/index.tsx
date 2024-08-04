@@ -31,7 +31,6 @@ const Member: FC<{ name: string; onClose: () => void }> = ({
     if (isMobile && name) {
       const handleClickOutside = (event: MouseEvent) => {
         if ((event.target as HTMLElement).closest(".member") === null) {
-          console.log("Click outside detected");
           onClose();
         }
       };

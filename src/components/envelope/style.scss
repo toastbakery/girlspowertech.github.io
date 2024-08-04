@@ -50,9 +50,10 @@
 /* Media Query for mobile device (600px) */
 @media (max-width: 600px) {
   .envelope {
-    width: 80vmin;
+    width: 100%;
     min-width: 200px;
-    min-height: 120px;
+    min-height: 150px;
+    box-sizing: border-box;
 
     .header {
       h3 {

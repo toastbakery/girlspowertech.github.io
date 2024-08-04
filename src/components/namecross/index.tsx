@@ -17,13 +17,21 @@ const NameCross: FC<nameCrossProps> = ({ onSelect }) => {
   }, []);
 
   useEffect(() => {
+    const inputs = document.querySelectorAll('input');
+    inputs.forEach((input) => {
+      input.setAttribute('disabled', 'true');
+    });
+  }, []);
+
+
+  useEffect(() => {
     fillAllAnswers();
   }, []);
 
   return (
     <div className="crossword">
       <ThemeProvider theme={ {
-        focusBackground: 'pink',
+        focusBackground: '#ffe6e6',
         highlightBackground: '#e6e6e6',
       } }
       >

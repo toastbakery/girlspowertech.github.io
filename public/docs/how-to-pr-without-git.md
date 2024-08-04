@@ -82,9 +82,9 @@ tags:
 
 进入 `Comparing changes` 页面，在 `Add a title`中填写 PR 的标题，如果只有一个 commit 的话一般会自动填写标题，在有较多改动时，请补上简短的描述。
 
-请注意页面右上角的分支一定是你刚刚修改的分支 （默认是 `main` ）
+请注意页面右上角的分支一定是你刚刚修改的分支。
 
-🍻 最后点击下方按钮提交 PR！一般 vercel 会马上在 comments 中提供一个可预览的链接帮助 preview
+🍻 最后点击下方按钮提交 PR！一般 vercel 会马上在 comments 中提供一个可预览的链接帮助 preview，但目前只能支持一个 collaborator ，如果没有权限请在 preview 页面申请。后面会写如何使用 Github Pages 搭建个人博客并支持 preview 的文章。
 
 ![](/docs/imgs/5.png)
 
@@ -104,5 +104,4 @@ tags:
 ### 4. Tips
 
 1. 请时时关注你的仓库是否与上游仓库同步，如果未同步，点击下方 `Sync fork` 按钮拉取上游进行更新，如遇冲突将无法合并
-
   ![](/docs/imgs/sync.png)

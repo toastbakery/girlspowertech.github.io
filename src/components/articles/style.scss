@@ -2,7 +2,7 @@ aside {
   nav.toc {
     position: absolute;
     margin-top: 50px;
-    width: 300px;
+    width: 260px;
 
     h2 {
       font-size: 25px;
@@ -34,6 +34,8 @@ aside {
   margin-top: -30px;
   padding-bottom: 50px;
   color: var(--text-secondary);
+  line-height: 1.66;
+  word-break: normal;
 
   h1,
   h2,
@@ -82,6 +84,7 @@ aside {
   }
 
   img {
+    display: block;
     max-width: 90%;
     margin: 10px auto;
     height: auto;
@@ -98,7 +101,6 @@ aside {
   ul,
   ol {
     padding-inline-start: 2.5em;
-
     li {
       margin: 10px 0;
 
@@ -109,10 +111,11 @@ aside {
   }
 
   code {
+    display: inline-block;
     font-size: 0.9em;
     color: var(--code-text);
     background-color: var(--code-background);
-    padding: 2px 4px;
+    padding: 0 4px;
     font-weight: 600;
     border-radius: 4px;
   }
@@ -127,6 +130,7 @@ aside {
   }
   .article {
     margin-top: -16px;
+    padding-bottom: 20px;
     font-size: 12px;
 
     h1,
@@ -137,32 +141,33 @@ aside {
     }
 
     h1 {
-      font-size: 20px;
+      font-size: 23px;
     }
 
     h2 {
-      font-size: 18px;
+      font-size: 21px;
     }
 
     h3 {
-      font-size: 16px;
+      font-size: 19px;
     }
 
     h4 {
-      font-size: 14px;
+      font-size: 17px;
     }
 
     p {
-      font-size: 12px;
+      font-size: 15px;
       line-height: 1.5;
       margin: 10px 0;
     }
 
     ul,
     ol {
+      font-size: 15px;
+      padding-inline-start: 2em;
       li {
         margin: 10px 0;
-        line-height: 1.5;
       }
     }
   }
