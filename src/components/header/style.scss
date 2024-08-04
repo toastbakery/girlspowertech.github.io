@@ -14,11 +14,10 @@ header {
 
   .logo {
     background-image: var(--logo-image);
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 20px;
-    background-image: url("/logo.svg");
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -26,7 +25,7 @@ header {
 
   a {
     text-decoration: none;
-    color: black;
+    color: var(--text-primary);
   }
 
   h1 {
@@ -45,14 +44,14 @@ header {
 /* Media Query for 600px */
 @media (max-width: 600px) {
   header {
-    justify-content: space-between;
-    gap: 10px;
+    gap: 15px;
     margin-bottom: 10px;
 
     .logo {
       margin: 10px 0 0 15px;
       min-width: 70px;
-      width: 120px;
+      width: 60px;
+      height: 110px;
     }
 
     h1 {

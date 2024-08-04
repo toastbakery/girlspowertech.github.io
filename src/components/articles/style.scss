@@ -34,7 +34,7 @@ aside {
   margin-top: -30px;
   padding-bottom: 50px;
   color: var(--text-secondary);
-  line-height: 1.66;
+  line-height: 1.65;
   word-break: normal;
 
   h1,
@@ -43,6 +43,7 @@ aside {
   h4,
   h5 {
     margin: 20px 0;
+    color: var(--text-primary);
 
     a {
       text-decoration: none;
@@ -86,14 +87,13 @@ aside {
   img {
     display: block;
     max-width: 90%;
-    margin: 10px auto;
     height: auto;
     border-radius: 6px;
     box-shadow: 2px 3px 5px 2px #4a4a4a1a;
   }
 
   a {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     text-underline-offset: 4px;
     font-weight: 500;
   }
