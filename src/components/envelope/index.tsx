@@ -49,14 +49,14 @@ const Envelope: FC<EnvelopeProps> = ({ title, date, tags, onClick }) => {
           </span>
         ))}
       </div>
-      <motion.p
+      <motion.div
         initial={{ rotate: 60 }}
         animate={{ rotate: 0, translateY: "10px" }}
         transition={{ duration: 0.6, bounce: 0.2 }}
         className="stamp"
       >
         <GirlsPowerTechStamp color="#f7f7f7" />
-      </motion.p>
+      </motion.div>
     </div>
   );
 };

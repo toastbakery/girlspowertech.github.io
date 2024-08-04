@@ -14,8 +14,8 @@ const Home = () => {
     <Layout
       content={
         <>
-          <NameCross onSelect={setName} />
-          <Member name={name} onClose={handleClose} />
+          <NameCross onSelect={ setName } />
+          <Member name={ name } onClose={ handleClose } />
         </>
       }
     />

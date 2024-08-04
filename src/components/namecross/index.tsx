@@ -17,7 +17,7 @@ const NameCross: FC<nameCrossProps> = ({ onSelect }) => {
   }, []);
 
   useEffect(() => {
-    const inputs = document.querySelectorAll('input');
+    const inputs = document.querySelectorAll('.crossword input');
     inputs.forEach((input) => {
       input.setAttribute('disabled', 'true');
     });

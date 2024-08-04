@@ -13,7 +13,11 @@ export const Switch = () => {
   return (
     <div className="container-switch">
       <label className="switch">
-        <input type="checkbox" onChange={ () => setTheme(theme === 'light' ? 'dark' : 'light') } checked={ theme === 'dark' } />
+        <input type="checkbox"
+          onClick={ (e) => {
+            setTheme(theme === 'light' ? 'dark' : 'light')
+          } }
+          onChange={ () => setTheme(theme === 'light' ? 'dark' : 'light') } checked={ theme === 'dark' } />
         <span className="slider"></span>
       </label>
     </div>
