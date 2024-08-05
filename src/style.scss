@@ -1,4 +1,4 @@
-@import url('./var.scss');
+@import url("./var.scss");
 
 body {
   padding: 0;
@@ -70,6 +70,39 @@ body {
       gap: 20px;
       width: 100%;
       padding-bottom: 50px;
+    }
+
+    .article-page {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .tag-selector {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-color);
+
+      button {
+        background: none;
+        border: none;
+        color: var(--text-primary);
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        padding: 5px 10px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          font-weight: 600;
+          text-underline-offset: 3px;
+          text-decoration: underline;
+        }
+      }
     }
 
     .article {
