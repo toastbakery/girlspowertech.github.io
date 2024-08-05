@@ -39,7 +39,6 @@ jobs:
             git commit -m "update cross info"
             git pull origin ${{ github.ref }} --rebase
             git push origin ${{ github.ref }}
-            gh workflow run deploy.yml
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
