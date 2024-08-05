@@ -1,6 +1,8 @@
 [
   {
-    "name": "CITRUS"
+    "name": "CITRUS",
+    "introduction": "Citrus有两只猫，会写一些代码会一些生物医药会一些翻译会一些塔罗，努力在世界中存活下去。",
+    "avatarURL": "/avatars/citrus.png"
   },
   {
     "name": "MEOW"
