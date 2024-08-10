@@ -1,8 +1,9 @@
-.crossword {
+.crossword-wrapper {
   width: 60%;
   min-width: 60%;
   font-weight: 600;
   font-family: "Courier New", Courier, monospace;
+  border: 2px solid #fdfcf9;
 }
 
 .clues {
@@ -11,7 +12,7 @@
 
 /* Media Query for mobile device (600px) */
 @media (max-width: 600px) {
-  .crossword {
+  .crossword-wrapper {
     width: 90vmin;
     height: 90vmin;
     min-width: 300px;

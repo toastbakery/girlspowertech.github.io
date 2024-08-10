@@ -96,6 +96,10 @@ body {
         padding: 5px 10px;
         cursor: pointer;
 
+        &:first-of-type {
+          padding-left: 3px;
+        }
+
         &.active,
         &:hover {
           font-weight: 600;
@@ -141,6 +145,10 @@ body {
         align-items: center;
         margin: 20px;
         position: relative;
+      }
+
+      .tag-selector {
+        padding: 0;
       }
 
       .article-list {

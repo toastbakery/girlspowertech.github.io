@@ -29,7 +29,7 @@ const NameCross: FC<nameCrossProps> = ({ onSelect }) => {
   }, []);
 
   return (
-    <div className="crossword">
+    <div className="crossword-wrapper">
       <ThemeProvider theme={ {
         focusBackground: '#ffe6e6',
         highlightBackground: '#e6e6e6',
