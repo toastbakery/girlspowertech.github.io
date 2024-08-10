@@ -55,6 +55,7 @@ tags:
 
 1. 了解文件入口 -> 是如何渲染在页面上的 ？
    1. `index.html` 为默认入口 （这是一个国际惯例）
+      ![index](/docs/imgs/index_html.jpg)
 
    2. [html 这里](https://github.com/girlspowertech/girlspowertech.github.io/blob/68be196c4801e84c504bf72b036bbf4013938b62/index.html#L15)引用了 `index.tsx`
    3. `index.tsx` 这里[获取 root 元素](https://github.com/girlspowertech/girlspowertech.github.io/blob/68be196c4801e84c504bf72b036bbf4013938b62/src/index.tsx#L6-L13)，将整个 React 应用渲染在这里
