@@ -4,7 +4,6 @@ date: 2024-08-13
 desc: 只是个凑数的，让页面上多展示几个 card。
 tags:
 - weekly-report
-- 八月周报
 ---
 
 ## 2024年8月周报

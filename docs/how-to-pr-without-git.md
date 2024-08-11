@@ -30,19 +30,19 @@ tags:
 
 你可以点击右上角的 `Fork` 按钮，将它 fork 到自己的账号下。
 
-![](/docs/imgs/1.png)
+![](/docs/imgs/git/1.png)
 
 #### 2.2 去要修改的文件 / 目录
 
 去自己 fork 的仓库，链接格式为 `<你的 Github ID/girlspowertech.github.io>` ，点击 `Go to file` ，输入查找你要修改的文件，点击进入。此处以在 `public/avatars` 上传头像为例：
 
-![](/docs/imgs/2.png)
+![](/docs/imgs/git/2.png)
 
 #### 2.3 去上传文件页面
 
 现在已经到达你要上传头像的文件夹，点击 `Add file` -> `Upload files`
 
-![](/docs/imgs/3.png)
+![](/docs/imgs/git/3.png)
 
 #### 2.4 上传文件
 
@@ -50,7 +50,7 @@ tags:
 
 在 `Commit Changes` 中写好这次改动的信息，点击下方的按钮提交
 
-![](/docs/imgs/9.png)
+![](/docs/imgs/git/9.png)
 
 #### 2.5 更新自己的信息
 
@@ -58,25 +58,25 @@ tags:
 
 回到第 `2.2` 步，找到 `workers.json` 文件点击进入。
 
-![](/docs/imgs/4.png)
+![](/docs/imgs/git/4.png)
 
 #### 2.6 进入编辑模式
 
 点击右上角的铅笔按钮，进入编辑模式。
 
-![](/docs/imgs/8.png)
+![](/docs/imgs/git/8.png)
 
 #### 2.7 新增自己的信息
 
 滑到文件最下方，填入符合[`JSON 格式`](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Objects/JSON)的自己的信息（可以直接复制上一个成员的，但要注意补充一个半角逗号），点击 `Commit Changes` 提交。
 
-![](/docs/imgs/7.png)
+![](/docs/imgs/git/7.png)
 
 #### 2.8 回到仓库主页
 
 回到自己 fork 的仓库主页，点击 `Contribute` -> `Open pull request`，提交 PR。
 
-![](/docs/imgs/6.png)
+![](/docs/imgs/git/6.png)
 
 #### 2.9 提交 PR
 
@@ -86,11 +86,11 @@ tags:
 
 🍻 最后点击下方按钮提交 PR！一般 vercel 会马上在 comments 中提供一个可预览的链接帮助 preview，但目前只能支持一个 collaborator ，如果没有权限请在 preview 页面申请。后面会写如何使用 Github Pages 搭建个人博客并支持 preview 的文章。
 
-![](/docs/imgs/5.png)
+![](/docs/imgs/git/5.png)
 
 ### 3. 提交一篇新的文章
 
-例子 2 是成员提交一篇新的文章到团队博客，基本方法于上传自己的头像类似，需要在 `public/docs/` 目录下新建一个 .md 文件。如果有图片，请上传在 `public/docs/imgs/` 目录下，然后在 md 文件中以 `/docs/imgs/:photo_name` 开头引用。
+例子 2 是成员提交一篇新的文章到团队博客，基本方法于上传自己的头像类似，需要在 `public/docs/` 目录下新建一个 .md 文件。如果有图片，请上传在 `public/docs/imgs/git/` 目录下，然后在 md 文件中以 `/docs/imgs/git/:photo_name` 开头引用。
 
 #### 3.1 了解 Markdown
 
@@ -104,4 +104,4 @@ tags:
 ### 4. Tips
 
 1. 请时时关注你的仓库是否与上游仓库同步，如果未同步，点击下方 `Sync fork` 按钮拉取上游进行更新，如遇冲突将无法合并
-  ![](/docs/imgs/sync.png)
+  ![](/docs/imgs/git/sync.png)
