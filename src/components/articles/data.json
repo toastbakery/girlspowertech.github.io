@@ -10,6 +10,15 @@
     "path": "public/docs/weekly-report-202408.md"
   },
   {
+    "title": "如何线上预览自己GitHub上的网页项目",
+    "date": "2024-08-11",
+    "tags": [
+      "tutorial"
+    ],
+    "id": "how-to-review-website-repository-online",
+    "path": "public/docs/how-to-review-website-repository-online.md"
+  },
+  {
     "title": "如何移除 PR 中多余的 commit ？",
     "date": "2024-08-04",
     "tags": [
